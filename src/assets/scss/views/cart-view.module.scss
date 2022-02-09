@@ -1,0 +1,16 @@
+.cart_view {
+  min-height: 100vh;
+  min-width: 100vw;
+
+  .header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+
+    .placeholder {
+      width: 48px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import '../variables';
+
+.link_base {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  .icon {
+    color: $medium-gray-icons;
+    font-size: 20px;
+  }
+
+  &.active {
+    background-color: $orange-secondary;
+    border-radius: 8px;
+
+    .icon {
+      color: $orange-primary;
+    }
+  }
+}

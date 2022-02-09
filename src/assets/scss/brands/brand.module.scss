@@ -1,0 +1,37 @@
+@import '../variables';
+
+.brand {
+  background-color: $light-gray;
+  padding: 5px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 100ms ease-in;
+
+  &.active {
+    background-color: $orange-primary;
+
+    .image_wrapper {
+      img {
+        filter: invert(0%) sepia(2%) saturate(0%) hue-rotate(295deg) brightness(107%) contrast(101%);
+      }
+      color: white;
+    }
+  }
+
+  .image_wrapper {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 100%;
+      width: 100%;
+      filter: invert(59%) sepia(0%) saturate(0%) hue-rotate(31deg) brightness(91%) contrast(84%);
+    }
+  }
+}
