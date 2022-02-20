@@ -1,0 +1,13 @@
+export const lightGray = '#f5f5f5';
+export const lighterGrayHover = '#eeeeee';
+export const lightGrayHover = '#dedede';
+export const darkGrayHover = '#d2d2d2';
+export const mediumGrayIcons = '#bdbdbd';
+export const lightGrayText = '#727272';
+export const orangePrimary = '#f66126';
+export const orangePrimaryHover = '#da5524';
+export const orangeSecondary = '#ffe6e1';
+export const bluePrimary = '#5588e7';
+export const pinkPrimary = '#ff8a9a';
+export const violetPrimary = '#9a4a9a';
+export const yellowPrimary = '#ffbd22';
