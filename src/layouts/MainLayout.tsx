@@ -6,7 +6,7 @@ import NavigationDesktop from '../components/navigation/NavigationDesktop';
 import windowWidthContext from '../shared/context/window-width/window-width-context';
 import FooterMobile from '../components/footer/FooterMobile';
 import FooterDesktop from '../components/footer/FooterDesktop';
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import { routes } from '../shared/router/routes';
 import WishListView from '../views/WishlistView';
 import CartView from '../views/CartView';
@@ -35,6 +35,7 @@ const MainLayout = () => {
         <Route path={ routes.wishlist } element={ <WishListView/> }/>
         <Route path={ routes.cart } element={ <CartView/> }/>
         <Route path={ `${ routes.products }:product` } element={ <ProductView/> }/>
+        <Route path="/*" element={ <Navigate to={ `${ routes.main }${ routes.home }` }/> }/>
       </Routes>
       { isMobile ? <FooterMobile/> : <FooterDesktop/> }
     </MainLayoutWrapper>
