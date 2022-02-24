@@ -1,12 +1,14 @@
-import { routes } from "./shared/router/routes";
-import { Route, Routes, Navigate } from "react-router-dom";
+import { routes } from './shared/router/routes';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import React from 'react';
-import Providers from "./shared/context/Providers";
-import { GlobalStyles } from "./assets/styles/global/GlobalStyles";
-import { ResetStyles } from "./assets/styles/global/ResetStyles";
-import MainLayout from "./layouts/MainLayout";
+import Providers from './shared/context/Providers';
+import { GlobalStyles } from './assets/styles/global/GlobalStyles';
+import { ResetStyles } from './assets/styles/global/ResetStyles';
+import MainLayout from './layouts/MainLayout';
 
-require('./shared/mocks');
+if (process.env.REACT_APP_PUBLIC_API_MOCKING === 'enabled') {
+  require('./shared/mocks');
+}
 
 function App() {
   return (
@@ -17,7 +19,7 @@ function App() {
         <div className="App">
           <Routes>
             <Route path="/" element={ <Navigate to={ `${ routes.main }${ routes.home }` }/> }/>
-            <Route path={ `${ routes.main }*` } element={ <MainLayout /> }/>
+            <Route path={ `${ routes.main }*` } element={ <MainLayout/> }/>
           </Routes>
         </div>
       </Providers>
