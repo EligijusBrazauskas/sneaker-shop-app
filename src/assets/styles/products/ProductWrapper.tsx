@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { lighterGrayHover, lightGray, orangePrimary } from "../variables";
+import styled from 'styled-components';
+import { lighterGrayHover, lightGray, orangePrimary } from '../variables';
 
 export const ProductWrapper = styled.div`
   flex-basis: 100%;
@@ -8,17 +8,17 @@ export const ProductWrapper = styled.div`
   border-radius: 12px;
   cursor: pointer;
   transition: all 100ms ease-in;
-  
+
   &:hover {
     background-color: ${ lighterGrayHover };
     transform: scale(1.02);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 8px 0px;
   }
-  
+
   @media screen and (min-width: 420px) {
     flex-basis: 48%;
   }
-  
+
   @media screen and (min-width: 1024px) {
     flex-basis: 32%;
   }
@@ -36,11 +36,11 @@ export const ProductWrapper = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      
+
       &:hover {
         transform: scale(1.3);
       }
-      
+
       .heart-full {
         color: ${ orangePrimary };
       }

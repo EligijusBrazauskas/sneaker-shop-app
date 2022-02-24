@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const HomeViewWrapper = styled.div`
   width: 100%;
@@ -6,7 +6,7 @@ export const HomeViewWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
+
   @media (min-width: 768px) {
     min-height: calc(100vh - 160px);
   }
@@ -14,15 +14,15 @@ export const HomeViewWrapper = styled.div`
   .home-view-top {
     padding: 0 20px;
     height: 100%;
-    
+
     @media (min-width: 768px) {
       padding: 20px 40px 0;
     }
-    
+
     @media (min-width: 1024px) {
       padding: 20px 60px 0;
     }
-    
+
     @media (min-width: 1200px) {
       padding: 20px 100px 0;
     }
@@ -45,15 +45,15 @@ export const HomeViewWrapper = styled.div`
     position: sticky;
     bottom: 10px;
     z-index: 101;
-    
+
     @media (min-width: 768px) {
       padding: 0 40px;
     }
-    
+
     @media (min-width: 1024px) {
       padding: 20px 60px;
     }
-  
+
     @media (min-width: 1200px) {
       padding: 20px 100px;
     }

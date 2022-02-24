@@ -1,4 +1,4 @@
-import * as variables from "../../variables";
+import * as variables from '../../variables';
 
 export const backgroundColorHandler = (props: any) => {
   switch (props.backgroundColor || props.cardColor) {

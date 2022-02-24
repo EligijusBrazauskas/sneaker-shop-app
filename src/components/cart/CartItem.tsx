@@ -1,16 +1,16 @@
-import React from "react";
-import CartItemModel from "../../models/cart-item";
-import { CartItemWrapper } from "../../assets/styles/cart/CartItemWrapper";
-import { discountedPrice } from "../../helpers/discount-calculator";
-import Counter from "./Counter";
-import { routes } from "../../shared/router/routes";
-import { useNavigate } from "react-router-dom";
+import React from 'react';
+import CartItemModel from '../../shared/models/cart-item';
+import { CartItemWrapper } from '../../assets/styles/cart/CartItemWrapper';
+import { discountedPrice } from '../../shared/helpers/discount-calculator';
+import Counter from './Counter';
+import { routes } from '../../shared/router/routes';
+import { useNavigate } from 'react-router-dom';
 
 type Props = {
-  item: CartItemModel,
-  onAdd: (item: CartItemModel) => void,
-  onRemove: (id: any) => void
-}
+  item: CartItemModel;
+  onAdd: (item: CartItemModel) => void;
+  onRemove: (id: any) => void;
+};
 
 const CartItem = ({ item, onAdd, onRemove }: Props) => {
 
@@ -34,8 +34,11 @@ const CartItem = ({ item, onAdd, onRemove }: Props) => {
           <h2 className="h2_small">{ item.title }</h2>
           <div className="price-counter">
             <h1>${ discount.toFixed(2) }</h1>
-            <Counter amount={ item.amount } id={ item.id } onAdd={ () => onAdd(item) }
-                     onRemove={ () => onRemove(item.id) }/>
+            <Counter
+              amount={ item.amount }
+              id={ item.id }
+              onAdd={ () => onAdd(item) }
+              onRemove={ () => onRemove(item.id) }/>
           </div>
         </div>
       </div>

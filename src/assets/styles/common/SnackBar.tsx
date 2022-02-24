@@ -1,10 +1,10 @@
-import styled, { keyframes } from "styled-components";
-import { lightGrayHover, orangePrimary } from "../variables";
+import styled, { keyframes } from 'styled-components';
+import { lightGrayHover, orangePrimary } from '../variables';
 
 type Props = {
-  error?: boolean,
-  success?: boolean
-}
+  error?: boolean;
+  success?: boolean;
+};
 
 const fadeIn = keyframes`
   from {

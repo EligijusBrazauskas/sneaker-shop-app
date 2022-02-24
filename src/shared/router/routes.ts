@@ -3,5 +3,5 @@ export enum routes {
   home = 'home',
   cart = 'cart',
   products = 'products/',
-  wishlist = 'wishlist'
+  wishlist = 'wishlist',
 }

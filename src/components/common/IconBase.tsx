@@ -1,13 +1,13 @@
-import React from "react";
-import { BsFillCartFill, BsFillHeartFill, BsFillHouseFill } from "react-icons/bs";
+import React from 'react';
+import { BsFillCartFill, BsFillHeartFill, BsFillHouseFill } from 'react-icons/bs';
 import { AiFillStar } from 'react-icons/ai';
-import { Icon } from "../../assets/styles/common/Icon";
+import { Icon } from '../../assets/styles/common/Icon';
 
 type Props = {
-  icon?: string,
-  active?: boolean
-  color?: string
-}
+  icon?: string;
+  active?: boolean;
+  color?: string;
+};
 
 const IconBase = ({ icon, active, color }: Props) => {
 

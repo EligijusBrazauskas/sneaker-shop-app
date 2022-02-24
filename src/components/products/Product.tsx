@@ -1,17 +1,17 @@
 import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { routes } from "../../shared/router/routes";
-import ButtonBase from "../common/ButtonBase";
-import { FiHeart } from "react-icons/fi";
-import { FaHeart } from "react-icons/fa";
-import ProductModel from "../../models/product";
-import { discountedPrice } from "../../helpers/discount-calculator";
-import { ProductWrapper } from "../../assets/styles/products/ProductWrapper";
-import WishListContext from "../../context/wishlist/wishlist-context";
+import { routes } from '../../shared/router/routes';
+import ButtonBase from '../common/ButtonBase';
+import { FiHeart } from 'react-icons/fi';
+import { FaHeart } from 'react-icons/fa';
+import ProductModel from '../../shared/models/product';
+import { discountedPrice } from '../../shared/helpers/discount-calculator';
+import { ProductWrapper } from '../../assets/styles/products/ProductWrapper';
+import WishListContext from '../../shared/context/wishlist/wishlist-context';
 
 type Props = {
-  product: ProductModel,
-}
+  product: ProductModel;
+};
 
 const Product = ({ product }: Props) => {
 

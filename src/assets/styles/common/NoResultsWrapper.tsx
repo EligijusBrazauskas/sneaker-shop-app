@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { lightGrayHover, lightGrayText } from "../variables";
+import styled from 'styled-components';
+import { lightGrayHover, lightGrayText } from '../variables';
 
 export const NoResultsWrapper = styled.div`
   height: 100%;
@@ -16,7 +16,7 @@ export const NoResultsWrapper = styled.div`
   margin: 0 auto;
   text-align: center;
   color: ${ lightGrayText };
-  
+
   .icon-container {
     font-size: 100px;
     color: ${ lightGrayHover };

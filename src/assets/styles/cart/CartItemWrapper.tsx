@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { lightGrayHover, orangeSecondary } from "../variables";
+import styled from 'styled-components';
+import { lightGrayHover, orangeSecondary } from '../variables';
 
 export const CartItemWrapper = styled.div`
   display: flex;

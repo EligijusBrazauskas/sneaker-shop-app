@@ -1,15 +1,15 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import ButtonBase from "./ButtonBase";
-import { FiAlertCircle, FiArrowRight, FiCheck } from "react-icons/fi";
-import { SnackBar } from "../../assets/styles/common/SnackBar";
+import ButtonBase from './ButtonBase';
+import { FiAlertCircle, FiArrowRight, FiCheck } from 'react-icons/fi';
+import { SnackBar } from '../../assets/styles/common/SnackBar';
 
 type Props = {
-  children: any,
-  imageType: string,
-  error?: boolean,
-  success?: boolean,
-  clearAddedToCart?: any
-}
+  children: any;
+  imageType: string;
+  error?: boolean;
+  success?: boolean;
+  clearAddedToCart?: any;
+};
 
 const SnackBarBase = ({ children, imageType, error, success, clearAddedToCart }: Props) => {
 

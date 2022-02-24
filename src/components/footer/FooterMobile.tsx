@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
-import CartContext from "../../context/cart/cart-context";
+import React, { useContext } from 'react';
+import CartContext from '../../shared/context/cart/cart-context';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { routes } from '../../shared/router/routes';
 import LinkBase from '../common/LinkBase';
-import { FooterMobileWrapper } from "../../assets/styles/footer/FooterWrapper";
+import { FooterMobileWrapper } from '../../assets/styles/footer/FooterWrapper';
 
 const FooterMobile = () => {
   const location = useLocation();
@@ -38,7 +38,7 @@ const FooterMobile = () => {
       case `${ routes.main }${ routes.cart }`:
         return 'cart';
       default:
-        return 'home';
+        return '';
     }
   };
 
@@ -48,14 +48,25 @@ const FooterMobile = () => {
 
   return (
     <FooterMobileWrapper>
-      <LinkBase icon={ 'home' } click={ navigateHome } active={ activeLink() === 'home' }/>
-      <LinkBase icon={ 'heart' } click={ navigateWishlist } active={ activeLink() === 'wishlist' }/>
-      <LinkBase icon={ 'cart' } click={ navigateCart } active={ activeLink() === 'cart' }>
-        <span className="cart-counter">{ numberOfCartItems }</span>
+      <LinkBase
+        icon={ 'home' }
+        click={ navigateHome }
+        active={ activeLink() === 'home' }
+      />
+      <LinkBase
+        icon={ 'heart' }
+        click={ navigateWishlist }
+        active={ activeLink() === 'wishlist' }
+      />
+      <LinkBase
+        icon={ 'cart' }
+        click={ navigateCart }
+        active={ activeLink() === 'cart' }
+      >
+        <span className='cart-counter'>{ numberOfCartItems }</span>
       </LinkBase>
     </FooterMobileWrapper>
   );
-
 };
 
 export default FooterMobile;

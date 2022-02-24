@@ -1,5 +1,5 @@
-import styled, { keyframes } from "styled-components";
-import { orangePrimary } from "../variables";
+import styled, { keyframes } from 'styled-components';
+import { orangePrimary } from '../variables';
 
 type Props = {
   className?: string;
@@ -21,7 +21,7 @@ export const Loading = styled.div<Props>`
   align-items: center;
   width: 100%;
   min-height: ${ (props) =>
-    props.isMobile ? "calc(100vh - 80px)" : "calc(100vh - 160px)" };
+  props.isMobile ? "calc(100vh - 80px)" : "calc(100vh - 160px)" };
 
   .spinner {
     width: 100px;

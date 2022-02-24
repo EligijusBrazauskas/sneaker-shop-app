@@ -1,18 +1,18 @@
 import React, { ChangeEvent, useContext } from 'react';
-import ButtonBase from "../common/ButtonBase";
-import { MdClose } from "react-icons/md";
-import { NavigationDesktopWrapper } from "../../assets/styles/navigation/NavigationDesktopWrapper";
-import LinkBase from "../common/LinkBase";
-import CartContext from "../../context/cart/cart-context";
-import { routes } from "../../shared/router/routes";
-import { useLocation, useNavigate } from "react-router-dom";
-import searchTermContext from "../../context/search/search-term-context";
-import searchedProductsContext from "../../context/products/searched-products-context";
-import Logo from "../common/Logo";
+import ButtonBase from '../common/ButtonBase';
+import { MdClose } from 'react-icons/md';
+import { NavigationDesktopWrapper } from '../../assets/styles/navigation/NavigationDesktopWrapper';
+import LinkBase from '../common/LinkBase';
+import CartContext from '../../shared/context/cart/cart-context';
+import { routes } from '../../shared/router/routes';
+import { useLocation, useNavigate } from 'react-router-dom';
+import searchTermContext from '../../shared/context/search/search-term-context';
+import searchedProductsContext from '../../shared/context/products/searched-products-context';
+import Logo from '../common/Logo';
 
 type Props = {
-  isSearchVisible?: boolean
-}
+  isSearchVisible?: boolean;
+};
 
 const NavigationDesktop = ({ isSearchVisible }: Props) => {
 

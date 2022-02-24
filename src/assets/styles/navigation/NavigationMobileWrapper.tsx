@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import { lightGray } from "../variables";
+import styled from 'styled-components';
+import { lightGray } from '../variables';
 
 export const NavigationMobileWrapper = styled.div`
- display: flex;
+  display: flex;
   justify-content: center;
   padding: 20px 20px;
   gap: 12px;

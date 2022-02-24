@@ -1,11 +1,11 @@
-import ButtonBase from "../common/ButtonBase";
-import React, { useEffect, useState } from "react";
-import DealModel from "../../models/deal";
-import { DealCard } from "../../assets/styles/deals/DealCard";
+import ButtonBase from '../common/ButtonBase';
+import React, { useEffect, useState } from 'react';
+import DealModel from '../../shared/models/deal';
+import { DealCard } from '../../assets/styles/deals/DealCard';
 
 type Props = {
-  deal: DealModel
-}
+  deal: DealModel;
+};
 
 const DealCardBase = ({ deal }: Props) => {
   const [cardColor, setCardColor] = useState('white');

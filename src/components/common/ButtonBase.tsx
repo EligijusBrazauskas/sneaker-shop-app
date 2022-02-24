@@ -1,17 +1,17 @@
-import React from "react";
-import { Button } from "../../assets/styles/common/button/Button";
+import React from 'react';
+import { Button } from '../../assets/styles/common/button/Button';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  children: any,
-  backgroundColor?: string,
-  cardColor?: string,
-  textColor?: string,
-  borderRadius?: string,
-  border?: boolean,
-  borderLighter?: boolean,
-  round?: boolean,
-  isAtFirstPage?: boolean,
-  isAtLastPage?: boolean
+  children: any;
+  backgroundColor?: string;
+  cardColor?: string;
+  textColor?: string;
+  borderRadius?: string;
+  border?: boolean;
+  borderLighter?: boolean;
+  round?: boolean;
+  isAtFirstPage?: boolean;
+  isAtLastPage?: boolean;
 }
 
 const ButtonBase: React.FC<ButtonProps> = ({

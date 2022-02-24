@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { Rating } from "../../assets/styles/common/Rating";
-import IconBase from "./IconBase";
-import { yellowPrimary } from "../../assets/styles/variables";
+import { Rating } from '../../assets/styles/common/Rating';
+import IconBase from './IconBase';
+import { yellowPrimary } from '../../assets/styles/variables';
 
 type Props = {
-  rating: number
-}
+  rating: number;
+};
 
 const RatingBase = ({ rating }: Props) => {
 

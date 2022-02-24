@@ -1,11 +1,10 @@
-import React from "react";
+import React from 'react';
 import { ReactComponent as LogoIcon } from '../../assets/svg/sneaky.svg';
-import { useLocation, useNavigate } from "react-router-dom";
-import { routes } from "../../shared/router/routes";
-import { LogoWrapper } from "../../assets/styles/common/LogoWrapper";
+import { useLocation, useNavigate } from 'react-router-dom';
+import { routes } from '../../shared/router/routes';
+import { LogoWrapper } from '../../assets/styles/common/LogoWrapper';
 
 const Logo = () => {
-
   const navigate = useNavigate();
   const location = useLocation();
 

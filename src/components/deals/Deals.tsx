@@ -1,17 +1,17 @@
-import React, { useContext } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper";
+import React, { useContext } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/autoplay';
-import DealCardBase from "./DealCardBase";
-import DealModel from "../../models/deal";
-import WindowWidthContext from "../../context/window-width/window-width-context";
-import { offsetCalculator } from "../../helpers/deals-swiper/offset-calculator";
-import { slidesShownCalculator } from "../../helpers/deals-swiper/slides-shown-calculator";
+import DealCardBase from './DealCardBase';
+import DealModel from '../../shared/models/deal';
+import WindowWidthContext from '../../shared/context/window-width/window-width-context';
+import { offsetCalculator } from '../../shared/helpers/deals-swiper/offset-calculator';
+import { slidesShownCalculator } from '../../shared/helpers/deals-swiper/slides-shown-calculator';
 
 type Props = {
   deals: DealModel[];
-}
+};
 
 const Deals = ({ deals }: Props) => {
 

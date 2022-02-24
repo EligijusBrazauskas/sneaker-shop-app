@@ -1,12 +1,12 @@
-import React from "react";
-import { CounterWrapper } from "../../assets/styles/cart/CounterWrapper";
+import React from 'react';
+import { CounterWrapper } from '../../assets/styles/cart/CounterWrapper';
 
 type Props = {
-  amount: number,
-  id: any,
-  onAdd: () => void,
-  onRemove: () => void,
-}
+  amount: number;
+  id: any;
+  onAdd: () => void;
+  onRemove: () => void;
+};
 
 const Counter = ({ amount, onAdd, onRemove }: Props) => {
 

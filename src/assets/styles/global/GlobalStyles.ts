@@ -1,5 +1,5 @@
-import { createGlobalStyle } from "styled-components";
-import { lightGrayText } from "../variables";
+import { createGlobalStyle } from 'styled-components';
+import { lightGrayText } from '../variables';
 
 export const GlobalStyles = createGlobalStyle`
   .App {

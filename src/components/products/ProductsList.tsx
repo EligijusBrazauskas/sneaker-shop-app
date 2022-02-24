@@ -1,12 +1,12 @@
 import React from 'react';
 import Product from './Product';
-import LoadingBase from "../common/LoadingBase";
-import ProductModel from "../../models/product";
-import { ProductsListWrapper } from "../../assets/styles/products/ProductsListWrapper";
+import LoadingBase from '../common/LoadingBase';
+import ProductModel from '../../shared/models/product';
+import { ProductsListWrapper } from '../../assets/styles/products/ProductsListWrapper';
 
 type Props = {
-  products: ProductModel[],
-}
+  products: ProductModel[];
+};
 
 const ProductsList = ({ products }: Props) => {
 

@@ -1,19 +1,19 @@
-import styled from "styled-components";
-import { backgroundColorHandler, spanColorHandler } from "./utils";
+import styled from 'styled-components';
+import { backgroundColorHandler, spanColorHandler } from './utils';
 import * as variables from '../../variables';
-import { lightGray, lightGrayHover } from "../../variables";
+import { lightGray, lightGrayHover } from '../../variables';
 
 type Props = {
-  backgroundColor?: string,
-  textColor?: string,
-  cardColor?: string,
-  borderRadius?: string,
-  border?: boolean,
-  borderLighter?: boolean,
-  round?: boolean,
-  isAtFirstPage?: boolean,
-  isAtLastPage?: boolean,
-}
+  backgroundColor?: string;
+  textColor?: string;
+  cardColor?: string;
+  borderRadius?: string;
+  border?: boolean;
+  borderLighter?: boolean;
+  round?: boolean;
+  isAtFirstPage?: boolean;
+  isAtLastPage?: boolean;
+};
 
 const backgroundColor = (props: any) => backgroundColorHandler(props);
 const spanColor = (props: any) => spanColorHandler(props);
@@ -26,8 +26,8 @@ export const Button = styled.button<Props>`
   cursor: pointer;
   z-index: 101;
   transition: background-color 100ms ease-in;
-  ${ props => props.round && 'width: 50px'};
-  ${ props => props.round && 'height: 50px'};
+  ${ props => props.round && 'width: 50px' };
+  ${ props => props.round && 'height: 50px' };
   padding: ${ props => props.round ? '20px' : '10px' };
   ${ props => props.border && `border: 2px ${ lightGrayHover } solid` };
   ${ props => props.borderLighter && `border: 2px ${ lightGray } solid` };
@@ -36,9 +36,9 @@ export const Button = styled.button<Props>`
   ${ props => props.isAtFirstPage || props.isAtLastPage ? 'visibility: hidden' : 'visibility: visible' };
   
   &:hover {
-    ${ props => props.backgroundColor === 'gray' && `background-color: ${ variables.lightGrayHover }`};
-    ${ props => props.backgroundColor === 'orange-primary' && `background-color: ${ variables.orangePrimaryHover }`};
-    ${ props => props.border && `background-color: ${ variables.lightGray}` };
+    ${ props => props.backgroundColor === 'gray' && `background-color: ${ variables.lightGrayHover }` };
+    ${ props => props.backgroundColor === 'orange-primary' && `background-color: ${ variables.orangePrimaryHover }` };
+    ${ props => props.border && `background-color: ${ variables.lightGray }` };
   }
   
   & span {

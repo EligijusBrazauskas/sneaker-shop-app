@@ -1,10 +1,10 @@
-import styled from "styled-components";
-import { bluePrimary, orangePrimary, pinkPrimary } from "../variables";
+import styled from 'styled-components';
+import { bluePrimary, orangePrimary, pinkPrimary } from '../variables';
 
 type Props = {
-  children?: any,
-  cardColor: string,
-}
+  children?: any;
+  cardColor: string;
+};
 
 export const DealCard = styled.div<Props>`
   display: flex;

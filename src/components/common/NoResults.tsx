@@ -1,10 +1,10 @@
-import React from "react";
-import { NoResultsWrapper } from "../../assets/styles/common/NoResultsWrapper";
+import React from 'react';
+import { NoResultsWrapper } from '../../assets/styles/common/NoResultsWrapper';
 
 type Props = {
-  children?: any,
-  title: string,
-}
+  children?: any;
+  title: string;
+};
 
 const NoResults = ({ title, children }: Props) => {
   return (

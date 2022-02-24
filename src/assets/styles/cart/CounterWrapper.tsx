@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { lightGrayHover, orangePrimary, orangeSecondary } from "../variables";
+import styled from 'styled-components';
+import { lightGrayHover, orangePrimary, orangeSecondary } from '../variables';
 
 export const CounterWrapper = styled.div`
   display: flex;
